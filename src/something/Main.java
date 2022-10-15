@@ -10,13 +10,8 @@ public class Main {
 		long finish = 0;
 		System.out.println(usedBytes = Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory());
 		Scanner scanner = new Scanner(System.in);
-		//String sizeAndSul = scanner.nextLine();
-		//long usedBytes = 0;
-		//System.out.println(usedBytes = Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory());
-		//Scanner scannerForString = new Scanner(sizeAndSul);
 		int[] leftPack = new int[scanner.nextInt() + 1];
 		int[] rightPack = new int[scanner.nextInt() + 1];
-		//System.out.println(usedBytes = Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory());
 		sumSalary = scanner.nextInt();
 		int left = 1;
 		int right = 1;
@@ -29,8 +24,6 @@ public class Main {
         int temporary = 0;
 		while(left < leftPack.length || right < rightPack.length) {
 
-			//String salaryOfPerson = scanner.nextLine();
-			//scannerForString = new Scanner(salaryOfPerson);
 			if(left < leftPack.length) {
 				temporary = scanner.nextInt();
 				leftPack[left] = temporary;
@@ -80,10 +73,9 @@ public class Main {
 			}
 			scanner.nextLine();
 		}
-		//System.out.println(usedBytes = Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory());
+	
 		scanner.close();
-		//scannerForString.close();
-		//System.out.println(usedBytes = Runtime.getRuntime().totalMemory()-Runtime.getRuntime().freeMemory());
+
 		if(globalMax < localMax) {
 			globalMax = localMax;
 			localMax = 0;
